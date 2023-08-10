@@ -10,7 +10,8 @@ const rpg = document.querySelector("#rpgElements");
 const monsterStats = document.querySelector("#rpgMonsterStats");
 const monsterName = document.querySelector("#rpgMonsterName");
 const monterHp = document.querySelector("#rpgMonsterHp");
-
+const window1 = document.querySelector("#gamewindow1");
+const window2 = document.querySelector("#gamewindow2");
 
 class Human {
     constructor(){
@@ -301,6 +302,7 @@ const weapons = [
 firstRun(locations[0]);
 
 function firstRun(locations){
+    window2.style.display = "none";
     monsterStats.style.display = "none";
     rpg.style.display = "none";
     text.innerHTML = locations.text;
@@ -310,13 +312,15 @@ document.getElementById("rpgNewgame").onclick = function(){
     let name = String(document.getElementById("rpgNameInput").value);
 
     Player.name = name;
-
+    window2.style.display = "block";
+    window1.style.display = "none";
     document.getElementById("rpgName").innerHTML = "Name: " + Player.name;
     hp.innerHTML = Player.health;
     xp.innerHTML = Player.xp;
     money.innerHTML = Player.money;
     
     update(locations[1]);
+
 }
 
 function update(locations){
