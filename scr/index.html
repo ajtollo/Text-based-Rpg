@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <div class="inner-content">
         <div class="gameContainer" id="gamewindow1">
+            <label>Text-Based Rpg Game</label>
+            <input class="c1Components" type="text" id="rpgNameInput">
             <button class="c1Components" type="" id="rpgNewgame">New Game</button><br>
-            <input class="c1Components" type="text" id="rpgNameInput"> 
         </div> 
     
         <div class="gameContainer mainGame" id="gamewindow2">
-            <div class="item-1" id="rpgElements">
+            <div class="item-1 gameContent" id="rpgElements">
                 <label id = "rpgName">Name: </label><br>
-                <label id = "rpgDsurvived">Days survived </label><br>
+                <label id = "rpgDsurvived">Days survived: </label> <label id="totalDays"></label><br>
                 
                 <label>Health: </label><label id="rpgHpI">0hp</label>
                 <label>Money: </label><label id="rpgMI">0$</label>
                 <label>XP: </label><label id="rpgXpI">0xp</label><br>
             </div>
-            <div class="item-2">
+            <div class="item-2 gameContent">
                 <button type="" id="rpgB1">#</button>
                 <button type="" id="rpgB2">#</button>
                 <button type="" id="rpgB3">#</button>
             </div>
-            <div class="item1" id="rpgMonsterStats">
+            <div class="item1-3 gameContent" id="rpgMonsterStats">
                 <label>Monster type:</label>
                 <label id="rpgMonsterName">#</label>
                 <label>Hp:</label>
                 <label id="rpgMonsterHp">#</label>
             </div>
-            <div class="item-4">
+            <div class="item-4 gameContent">
                 <!--some random imges-->
             </div>
-
-            <br>
-            <br>
-            <label id="rpgText">#</label>
-            <label></label>
+            <div class="item-5 gameContent">
+                
+                <label id="rpgText">#</label>
+            </div>
             </div>
         </div>
     

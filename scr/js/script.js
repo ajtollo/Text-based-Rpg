@@ -2,6 +2,7 @@ const hp = document.querySelector("#rpgHpI");
 const days = document.querySelector("#rpgDsurvived");
 const money = document.querySelector("#rpgMI");
 const xp = document.querySelector("#rpgXpI");
+const totalDay = document.querySelector("#totalDays");
 const button1 = document.querySelector("#rpgB1");
 const button2 = document.querySelector("#rpgB2");
 const button3 = document.querySelector("#rpgB3");
@@ -23,6 +24,7 @@ class Human {
         this._atk = 5;
         this.inventory = ["stick"];
         this._IsAlive = true
+        this.totalDay = 0;
     }
     get name(){
         return this._name;
@@ -306,6 +308,8 @@ function firstRun(locations){
     monsterStats.style.display = "none";
     rpg.style.display = "none";
     text.innerHTML = locations.text;
+    Player.totalDay++;
+    totalDay.innerHTML = Player.totalDay;
 }
 
 document.getElementById("rpgNewgame").onclick = function(){

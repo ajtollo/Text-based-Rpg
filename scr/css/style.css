@@ -22,9 +22,32 @@ body {
 }
 
 .gameContainer{
-    border-radius: 20px;
-    background-color: rgb(129, 102, 70);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(102, 78, 49);
     width: 700px;
     height: 600px;
     margin: 10px;
+}
+
+.c1Components {
+    width: 250px;
+    height: 30px;
+    margin: 30px;
+}
+
+.gameContainer label{
+    color:white;
+}
+.mainGame {
+    display: inline-block;
+}
+
+.gameContent {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
 }
